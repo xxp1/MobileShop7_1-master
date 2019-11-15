@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="#d9000000"
+    android:orientation="horizontal">
+    <!--底部标签栏-->
+    <!--收藏-->
+    <LinearLayout
+        android:id="@+id/favorite_layout"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/pd_collect_n" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="收藏"
+            android:textColor="#b2ffffff"
+            android:textSize="10sp" />
+    </LinearLayout>
+    <!--购物车-->
+    <LinearLayout
+        android:id="@+id/cat_layout"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:duplicateParentState="true"
+            android:src="@drawable/pd_car_n" />
+
+        <TextView
+            android:id="@+id/txt_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="购物车"
+            android:textColor="#b2ffffff"
+            android:textSize="10sp" />
+    </LinearLayout>
+    <!--添加购物车-->
+    <TextView
+        android:id="@+id/add_to_cart"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#fff15353"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="加入购物车"
+        android:textColor="@color/white"
+        android:textSize="19sp"
+        android:visibility="visible" />
+</LinearLayout>
